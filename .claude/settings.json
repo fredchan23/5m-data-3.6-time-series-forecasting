@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(~/miniconda3/envs/ml/bin/pip install:*)",
+      "Bash(~/miniconda3/envs/ml/bin/python -c \"import statsmodels; print\\('statsmodels:', statsmodels.__version__\\); import numpy; print\\('numpy:', numpy.__version__\\)\")",
+      "Bash(~/miniconda3/envs/ml/bin/python -c \"import sktime; print\\('sktime:', sktime.__version__\\); import sklearn; print\\('sklearn:', sklearn.__version__\\)\")",
+      "Bash(~/miniconda3/envs/ml/bin/pip index:*)",
+      "Bash(~/miniconda3/envs/ml/bin/python -c \"from sklearn.metrics._regression import _check_reg_targets; help\\(_check_reg_targets\\)\")",
+      "Bash('~/miniconda3/envs/ml/bin/python' -c ':*)",
+      "Bash(~/miniconda3/envs/ml/bin/python -c \"import skbase; print\\('skbase:', skbase.__version__\\)\")",
+      "Bash(~/miniconda3/envs/ml/bin/pip show:*)",
+      "Bash(~/miniconda3/envs/ml/bin/python -c \"import skbase.utils.dependencies as d; print\\(dir\\(d\\)\\)\")",
+      "Bash(~/miniconda3/envs/ml/bin/python -c \"import skbase; print\\(skbase.__file__\\)\")",
+      "Read(//home/fredc/miniconda3/envs/ml/lib/python3.11/site-packages/**)",
+      "Bash(~/miniconda3/envs/ml/bin/python -c \"from sktime.datasets import load_airline; print\\('import OK'\\)\")",
+      "Bash(~/miniconda3/envs/ml/bin/pip uninstall:*)"
+    ]
+  }
+}
